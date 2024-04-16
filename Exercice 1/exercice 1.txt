@@ -1,0 +1,70 @@
+Algorithme : Table de verité d'une fonction logique
+
+partie déclarative 
+
+var e1,e2,e3 : booléen;
+var s : booléen;
+
+début
+
+e1<-0;
+e2<-0;
+e3<-0;
+s <- ~e1&e2 | e3
+
+écrire ("la table de vérité :s=(/e1.e2 + e3)\n");
+écrire ("e1 | e2 | e3  | s");
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);
+
+e1<-0;
+e2<-0;
+e3<-1;
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);
+
+e1<-0;
+e2<-1;
+e3<-0;
+
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);;
+
+e1<-0;
+e2<-1;
+e3<-1;
+
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);;
+
+e1<-1;
+e2<-0;
+e3<-0;
+
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);
+
+e1<-1;
+e2<-0;
+e3<-1;
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);;
+
+e1<-1;
+e2<-1;
+e3<-0;
+
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);
+
+e1<-1;
+e2<-1;
+e3<-1;
+
+s <- ~e1&e2 | e3
+écrire (  e1, " |" ,  e2," | " , e3," |"  , s);
+
+écrire("s <- ~e1&~e2&e3|~e1&e2&~e3|~e1&e2&e3|e1&~e2&e3|e1&e2&e3");
+écrire("s <- ~e1&~e2&~e3|e1&~e2&~e3|e1&e2&~e3");
+
+
+fin
